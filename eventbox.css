@@ -1,0 +1,108 @@
+.event-title {
+    color: #0e83c5;
+    text-align: center;
+    font-size: 1.5em;
+    margin: 2.5% 0 0 0;
+    padding: 1% 0 0 0;
+    text-transform: uppercase;
+}
+
+.etitle {
+    font-size: 1.1em;
+    -webkit-margin-before: 0em;
+    -webkit-margin-after: 0em;
+    color: #0E83C5;
+    text-align: left;
+}
+
+.small {
+    font-size:0.7em;
+    -webkit-margin-before: 1em;
+    -webkit-margin-after: 0.7em;
+}
+
+.event-boxes {
+    width: 100%;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    padding: 0 2.5% 2.5% 2.5%;
+}
+
+.event-box {
+    display: flex;
+    flex-direction: column;
+    margin: 2%;
+}
+
+.event-pic {
+  width:100%;
+  text-align: center;
+  margin-top: 10px;
+}
+
+.event-text {
+  font-size: 0.9em;
+}
+
+.more-info {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #1C3866;
+    color: #1C3866;
+    font-size: 0.9em;
+    font-weight: bold;
+    width: 100;
+    text-transform: uppercase;
+    text-align: center;
+    height: 30px;
+    padding-top: 6px;
+}
+
+.subscribe {
+    max-height: 185px;
+    min-height: 110px;
+    width: 100%;
+    background-color: #0E83C5;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    align-items: center;
+}
+
+.subscribe-left {
+    max-width: 45%;
+    text-align: right;
+}
+
+.subscribe-right {
+    border-style: solid;
+    border-width: 1px;
+    border-color: #fdfdfd;
+    color: #fdfdfd;
+    font-size: 1.1em;
+    width: 35%;
+    margin: 2%;
+    text-transform: uppercase;
+    text-align: center;
+    height: 30px;
+    padding-top: 6px;
+    position: relative;
+    min-width: 150px;
+}
+
+.subscribe-right:hover {
+  border-style: solid;
+  background-color: #fdfdfd;
+  color: #0E83C5;
+  cursor: pointer;
+}
+
+.btn-box {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #fdfdfd;
+  margin-top: 50px;
+  width:40%;
+}

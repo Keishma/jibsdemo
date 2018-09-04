@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>JIBS</title>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  <!------ styles ------->
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="eventbox.css">
+  <link rel="stylesheet" href="stylemobile.css">
+  <link rel="stylesheet" href="mediaq.css">
+  <meta name="viewport" content="width=device-width", initial-scale="1.0">
+</head>
+<body>
+  <header>
+    <img src='images/logo.png' alt='logo' class='logo'>
+    <nav class='main-nav'>
+      <a href="" class='nav-link'>home</a></div>
+      <a href="" class='nav-link'>jurisdiction</a>
+      <a href="" class='nav-link'>events</a>
+      <a href="" class='nav-link'>contact</a>
+    </nav>
+    <a href="#" class="burg" onclick="toggleMenu()"><i class="fas fa-bars fa-2x" style="color: #fdfdfd"></i></a>
+  </header>
+      <nav id='mobile-nav'>
+      <a href="" class='mobile-nav-link'>home</a></div>
+      <a href="" class='mobile-nav-link'>jurisdiction</a>
+      <a href="" class='mobile-nav-link'>events</a>
+      <a href="" class='mobile-nav-link'>contact</a>
+    </nav>
+  <main>
+  <section class='banner overlay'>
+    <div class="social-box">
+      <div class="social">Social</div>
+    </div>
+    <div class="border-box">
+        <p class="text-white"> Bringing financial service experts to you </p>
+    </div>
+    <div class="services">
+      <div class="servbox right">
+        Specialists in the delivery of conferences for financial services professionals
+      </div>
+      <div class="servbox bord">
+        Serving financial services professionals in Jersey, Guernsey, Isle of Man, Cyprus, Malta and Bahrain
+      </div>
+      <div class="servbox left">
+        Leading industry practitioners and experts speak at all of our events
+      </div>
+    </div>
+  </section>
+  <div class="event-title"> latest events near you </div>
+  <section class='event-boxes'>
+     <div class="event-box">
+      <img src="images/city.jpg" alt="city" class="event-pic">
+        <h3 class="etitle small">20.08.2017 | JERSEY</h3>
+        <h2 class="etitle">2017 International Taxation Conference</h2>
+        <p class="event-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis aliquip.</p>
+        <div class='more-info'>more info</div>
+     </div>
+     <div class="event-box">
+      <img src="images/city.jpg" alt="city" class="event-pic">
+        <h3 class="etitle small">20.08.2017 | JERSEY</h3>
+        <h2 class="etitle">2nd Annual Regulatory Summit</h2>
+        <p class="event-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis aliquip.</p>
+        <div class='more-info'>more info</div>
+     </div>
+     <div class="event-box">
+      <img src="images/city.jpg" alt="city" class="event-pic">
+        <h3 class="etitle small">20.08.2017 | JERSEY</h3>
+        <h2 class="etitle">The Agile Business Conference</h2>
+        <p class="event-text">Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis aliquip.</p>
+        <div class='more-info'>more info</div>
+     </div>
+    </section>
+  <div class='subscribe'>
+    <div class='subscribe-left'>
+      <p class="text-white">Subscribe and be the first to hear about upcoming events</p>
+    </div>
+    <div class='subscribe-right' id="btn">
+      subscribe
+  </div>
+</div>
+  <div id="modal">
+        <div class="modal-content">
+            <span id="close">&times;</span>
+            <h2>Subsribe here...</h2>
+        </div>
+    </div>
+  <footer>
+    <p>I'm a footer, footer</p>
+  </footer>
+</main>
+
+<script>
+  function toggleMenu() {
+    var nav = document.getElementById("mobile-nav").style;
+    if (nav.display === "none" || nav.display =='') {
+        nav.display = "block";
+        console.log("hello");
+    } else {
+        nav.display = "none";
+    }
+}
+
+var btn = document.getElementById("btn");
+var modal = document.getElementById("modal");
+var span = document.getElementById("close");
+
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+</body>
+</html>
